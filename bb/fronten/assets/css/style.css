@@ -1,0 +1,71 @@
+
+
+.mg-top {
+  margin-top: 150px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.overridemargin {
+  margin-top: 100px;
+}
+
+.dataTables_empty {
+  display: none;
+}
+
+.custominput {
+  border: 1px solid #aebac9;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.btn-elaniin {
+  background-color: #1a5bff;
+  color: white;
+}
+
+.btn-elaniin:hover {
+  background: #8dadff;
+  color: white;
+}
+
+.customHeaderTable {
+  background-color: #0f45f9;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.customTitle{
+  color: #020D81;
+}
+.customLabel{
+  color: #4A5568;
+}
+
+.displayerrors{
+  color: red;
+}
+
+.errorborder{
+  border: 1px solid #FF5858;
+}
+
+.successborder{
+  border: 1px solid #02D83F;
+}
+
+
+/*
+*
+*Drag and drop style
+*/
+
+.app-container{
+  max-width : 1050px;
+}
+
+.col-1 {
+   min-width: 88px;
+}

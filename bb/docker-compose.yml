@@ -1,0 +1,25 @@
+version: '3.0'
+networks:
+  nitronet: null
+services:
+  database:
+    image: 'mysql:8.0'
+    container_name: nitroserverdb
+    environment:
+      MYSQL_DATABASE: db_nitro
+      MYSQL_ROOT_PASSWORD: 123456789
+    networks:
+      - nitronet
+    ports:
+      - '3306:3306'
+  backend:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: backapp
+    ports:
+      - '8080:8080'
+    networks:
+      - nitronet
+    depends_on:
+      - database
